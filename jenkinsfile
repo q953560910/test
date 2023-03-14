@@ -1,2 +1,7 @@
-pwd()
-1
+pipeline {
+    stage('path') {
+      steps {
+        sh 'pwd'
+      }
+    }
+}
