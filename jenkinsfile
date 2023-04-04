@@ -1,7 +1,11 @@
 pipeline {
-    stage('path') {
-      steps {
-        sh 'pwd'
-      }
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
     }
 }
