@@ -1,11 +1,16 @@
 pipeline {
-    agent any
-
+  agent {
+    node {
+      label 'awjenkins-salve-15.212'
+    }
+  }
+    
     stages {
-        stage('Hello') {
+        stage('build') {
             steps {
-                echo 'Hello World'
+                echo 'this is building'
             }
         }
+    
     }
 }
