@@ -11,6 +11,13 @@ pipeline {
                 echo 'this is building'
             }
         }
-    
+      }
+
+    stages {
+        stage('show') {
+          steps {
+            echo 'this is show'
+          }
+        }
     }
 }
